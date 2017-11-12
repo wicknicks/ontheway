@@ -15,6 +15,7 @@ indices/
 
 # Intellij
 .idea/
+.out/
 
 # Package Files #
 *.jar
