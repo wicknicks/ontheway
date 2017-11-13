@@ -6,7 +6,6 @@ build/
 generated-sources/
 indices/
 
-
 # Compiled class file
 *.class
 
@@ -14,8 +13,8 @@ indices/
 *.log
 
 # Intellij
+out/
 .idea/
-.out/
 
 # Package Files #
 *.jar
