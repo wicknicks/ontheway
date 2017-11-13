@@ -35,7 +35,7 @@ public class OSMIndexCreator implements Closeable {
         this.file = file;
 
         // index writer setup
-        Directory directory = new NIOFSDirectory(FileSystems.getDefault().getPath("/home/arjun/Sandbox/ontheway/indices/first/"));
+        Directory directory = new NIOFSDirectory(FileSystems.getDefault().getPath("indices/first/"));
         this.indexWriter = new IndexWriter(directory, new IndexWriterConfig());
     }
 
@@ -141,8 +141,7 @@ public class OSMIndexCreator implements Closeable {
     }
 
     public static void main(String[] args) throws Exception {
-
-        try (OSMIndexCreator c=new OSMIndexCreator("/home/arjun/Downloads/oregon-latest.osm.pbf")) {
+        try (OSMIndexCreator c=new OSMIndexCreator("/home/arjun/Downloads/california-latest.osm.pbf")) {
             c.create();
         }
     }
